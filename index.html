@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diagnosis.css">
+    <script src="Map.js"></script>
+    <title>CureHealth</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CureHealth</h1>
+        <form id="diseaseForm">
+            <label for="symptoms">Select the Symptoms you have been facing:</label>
+            <div class="symptom-group">
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom1" name="symptom" value="Fever">
+                    <label class="checkbox-label" for="symptom1">Fever</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom2" name="symptom" value="Headache">
+                    <label class="checkbox-label" for="symptom2">Headache</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom3" name="symptom" value="Cough">
+                    <label class="checkbox-label" for="symptom3">Cough</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom4" name="symptom" value="Sore throat">
+                    <label class="checkbox-label" for="symptom4">Sore throat</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom5" name="symptom" value="Fatigue">
+                    <label class="checkbox-label" for="symptom5">Fatigue</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom6" name="symptom" value="Nausea">
+                    <label class="checkbox-label" for="symptom6">Nausea</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom7" name="symptom" value="Shortness of breath">
+                    <label class="checkbox-label" for="symptom7">Shortness of breath</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom8" name="symptom" value="Loss of taste or smell">
+                    <label class="checkbox-label" for="symptom8">Loss of taste or smell</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom9" name="symptom" value="Rashes">
+                    <label class="checkbox-label" for="symptom9">Rashes</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom10" name="symptom" value="Vomiting">
+                    <label class="checkbox-label" for="symptom10">Vomiting</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom11" name="symptom" value="Loss of appetite">
+                    <label class="checkbox-label" for="symptom11">Loss of appetite</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom12" name="symptom" value="Joint pain">
+                    <label class="checkbox-label" for="symptom12">Joint pain</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom13" name="symptom" value="Mood Swings">
+                    <label class="checkbox-label" for="symptom13">Mood Swings</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom14" name="symptom" value="Memory Loss">
+                    <label class="checkbox-label" for="symptom14">Memory Loss</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom15" name="symptom" value="Chills">
+                    <label class="checkbox-label" for="symptom15">Chills</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom16" name="symptom" value="Sweating">
+                    <label class="checkbox-label" for="symptom16">Sweating</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom17" name="symptom" value="Swelling and Redness at a joint">
+                    <label class="checkbox-label" for="symptom17">Swelling,Redness at Joint</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom18" name="symptom" value="Irregular Heartbeat">
+                    <label class="checkbox-label" for="symptom18">Irregular Heartbeat</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom19" name="symptom" value="Anxiety">
+                    <label class="checkbox-label" for="symptom19">Anxiety</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom20" name="symptom" value="Stiffness">
+                    <label class="checkbox-label" for="symptom20">Stiffness</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom21" name="symptom" value="Extreme Hunger">
+                    <label class="checkbox-label" for="symptom21">Extreme Hunger</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom22" name="symptom" value="Slow Wound Healing">
+                    <label class="checkbox-label" for="symptom22">Slow Wound Healing</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom23" name="symptom" value="Indigestion">
+                    <label class="checkbox-label" for="symptom23">Indigestion</label>
+                </div>
+                <div class="symptom-item">
+                    <input type="checkbox" id="symptom24" name="symptom" value="Dark Urine">
+                    <label class="checkbox-label" for="symptom24">Dark Urine</label>
+                </div>
+            </div>
+
+            <label for="duration">Select the time period from which you have been facing:</label>
+            <select id="duration" name="duration">
+                <option value="1 day">1 day</option>
+                <option value="2 days">2 days</option>
+                <option value="3 days">3 days</option>
+                <option value="more than a week">more than a week</option>
+            </select>
+
+            <input type="submit" class="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

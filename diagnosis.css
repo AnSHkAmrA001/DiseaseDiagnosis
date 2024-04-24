@@ -1,0 +1,108 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #b6e1e6, #daf5f7);
+    color: #333;
+ }
+ 
+ .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+ }
+ 
+ h1 {
+    text-align: center;
+    color: #2c7873;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: 900;
+    letter-spacing: 2px;
+ }
+ 
+ form {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ label {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c7873;
+ }
+ 
+ .symptom-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+ }
+ 
+ .symptom-item {
+    margin-right: 30px;
+    margin-bottom: 15px;
+ }
+ 
+ .symptom-item input[type="checkbox"] {
+    display: none;
+ }
+ 
+ .symptom-item .checkbox-label {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e6f3f3;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #2c7873;
+    font-weight: 500;
+ }
+ 
+ .symptom-item input[type="checkbox"]:checked + .checkbox-label {
+    background-color: #2c7873;
+    color: #fff;
+ }
+ 
+ #duration {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #2c7873;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2c7873;
+    font-weight: 500;
+ }
+ 
+ .submit {
+    padding: 15px 30px;
+    background-color: #2c7873;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .submit:hover {
+    background-color: #217069;
+ }
+ 
+ @media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+ 
+    .symptom-group {
+        justify-content: center;
+    }
+ 
+    .symptom-item {
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+ }
